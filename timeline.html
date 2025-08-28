@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SCISTORY — Timeline</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .btn.active { background: linear-gradient(90deg, #7ee3ff, #ffd166); color: #0f1724; }
+  </style>
+  <link rel="icon" type="image/x-icon" href="images/my favicon.png">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+            <rect x="6" y="18" width="36" height="28" rx="3" fill="#042033" />
+            <path d="M18 18c6 0 10-4 16-6" stroke="#7ee3ff" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="48" cy="22" r="6" fill="#ffd166"/>
+            <path d="M46 16c6 6 8 14 6 20" stroke="#8affc1" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="site-title">
+          <h1>SCISTORY</h1>
+          <p>Interactive Timeline</p>
+        </div>
+      </div>
+
+      <nav>
+        <a class="btn" href="index.html">Home</a>
+        <a class="btn" href="science.html">Science</a>
+        <a class="btn" href="history.html">History</a>
+        <a class="btn active" href="timeline.html">Timeline</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <h2 class="neon">Blending Science & History</h2>
+          <p class="lead">Explore key moments in science and history side by side. Scroll through the timeline to see how discoveries and events shaped our world.</p>
+        </div>
+      </section>
+
+      <section class="card" style="margin-top:28px">
+        <div class="section-title">
+          <h3>Timeline</h3>
+        </div>
+
+        <div class="timeline" tabindex="0">
+          <div class="tick">
+            <h5>1543</h5>
+            <p>Copernicus publishes heliocentric model.</p>
+          </div>
+          <div class="tick">
+            <h5>1796</h5>
+            <p>Edward Jenner develops smallpox vaccine.</p>
+          </div>
+          <div class="tick">
+            <h5>1876</h5>
+            <p>Alexander Graham Bell patents the telephone.</p>
+          </div>
+          <div class="tick">
+            <h5>1969</h5>
+            <p>Apollo 11 — humans land on the Moon.</p>
+          </div>
+          <div class="tick">
+            <h5>1989</h5>
+            <p>World Wide Web invented by Tim Berners-Lee.</p>
+          </div>
+          <div class="tick">
+            <h5>2020</h5>
+            <p>First COVID-19 vaccines approved.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer style="margin-top:28px">
+        <small>© SCISTORY — Timeline. Built with ❤️</small>
+      </footer>
+    </main>
+
+    <script>
+      const timeline = document.querySelector('.timeline');
+      timeline.addEventListener('keydown', e => {
+        if(e.key === 'ArrowRight') timeline.scrollBy({left:140,behavior:'smooth'});
+        if(e.key === 'ArrowLeft') timeline.scrollBy({left:-140,behavior:'smooth'});
+      });
+    </script>
+  </div>
+</body>
+</html>

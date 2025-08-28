@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SCISTORY — Science Zone</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .btn.active { background: linear-gradient(90deg, #7ee3ff, #ffd166); color: #0f1724; }
+  </style>
+  <link rel="icon" type="image/x-icon" href="images/my favicon.png">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+            <rect x="6" y="18" width="36" height="28" rx="3" fill="#042033" />
+            <path d="M18 18c6 0 10-4 16-6" stroke="#7ee3ff" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="48" cy="22" r="6" fill="#ffd166"/>
+            <path d="M46 16c6 6 8 14 6 20" stroke="#8affc1" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="site-title">
+          <h1>SCISTORY</h1>
+          <p>Science Zone</p>
+        </div>
+      </div>
+
+      <nav>
+        <a class="btn" href="index.html">Home</a>
+        <a class="btn active" href="science.html">Science</a>
+        <a class="btn" href="history.html">History</a>
+        <a class="btn" href="timeline.html">Timeline</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <h2 class="neon">Explore the Science Zone</h2>
+          <p class="lead">Discover amazing breakthroughs, experiments, and innovations that shaped the world. From space exploration to the human body — dive deep into science here.</p>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div>
+          <div class="card">
+            <div class="section-title">
+              <h3>Featured Science Articles</h3>
+              <a href="#" class="btn-link">See all</a>
+            </div>
+
+            <div class="preview-list">
+              <article class="article">
+                <div class="thumb"></div>
+                <div class="meta">
+                  <a href="webb-telescope.html"><strong>The James Webb Telescope: A New Eye in Space</strong></a>
+                  <small>Space • 05 Aug 2025 • 9 min read</small>
+                </div>
+              </article>
+
+              <article class="article">
+                <div class="thumb"></div>
+                <div class="meta">
+                  <a href="Crispr.html"><strong>CRISPR and the Future of Medicine</strong></a>
+                  <small>Biology • 21 Jul 2025 • 7 min read</small>
+                </div>
+              </article>
+
+              <article class="article">
+                <div class="thumb"></div>
+                <div class="meta">
+                  <a href="quantum.html"><strong>Quantum Computers: Revolution or Hype?</strong></a>
+                  <small>Technology • 10 Jun 2025 • 8 min read</small>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <div class="section-title">
+              <h3>Quick Fact</h3>
+            </div>
+            <p style="color:var(--muted);margin:0">Did you know? The human brain contains about <strong>86 billion neurons</strong>, each capable of forming thousands of connections.</p>
+          </div>
+
+          <div class="card" style="margin-top:16px">
+            <div class="section-title">
+              <h3>Science Quiz</h3>
+              <a href="science-quiz.html" class="btn-link">Take quiz</a>
+            </div>
+            <p style="color:var(--muted);margin:0">Challenge yourself with fun science trivia questions.</p>
+          </div>
+        </aside>
+      </section>
+
+      <footer>
+        <small>© SCISTORY — Science Zone. Built with ❤️</small>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
